@@ -7,7 +7,7 @@ const path = require('path');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('pic')
-		.setDescription('Some Naughty images'),
+		.setDescription('images'),
 	async execute(interaction) {
       
         const mainpath = path.resolve(__dirname, "../images")
@@ -15,7 +15,7 @@ module.exports = {
         const file = new MessageAttachment(mainpath + "/" + paths[Math.floor(Math.random() * paths.length)]);
 
         const exampleEmbed = {
-            title: 'Here, take some of Mathilda',
+            title: 'Here, take some nice images',
             image: {
                 url: 'attachment://' + mainpath,
             },

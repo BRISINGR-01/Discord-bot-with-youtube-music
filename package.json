@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "refreshCommands": "node deplay-commands.js"
   },
-  "keywords": [],
+  "keywords": [
+    "discord-api"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
